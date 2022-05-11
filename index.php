@@ -126,7 +126,7 @@ function Hold() {
   }else{
 
   alert("Au tour du joueur 2 !");
-  newGame();
+
   }
 
   }else{
@@ -137,6 +137,7 @@ function Hold() {
   if(parseInt(numberp2.textContent)>=100)
   {
     alert('Le joueur 2 a gagné !!!');
+    newGame();
   }else{
 
   alert("Au tour du joueur 1 !");
