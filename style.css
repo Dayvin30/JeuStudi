@@ -1,0 +1,146 @@
+html { height: 100%; }
+
+body{
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: rgb(170,152,119);
+background: -moz-linear-gradient(top, rgb(170,152,119) 0%, rgb(132,76,52) 100%);
+background: -webkit-linear-gradient(top, rgb(170,152,119) 0%, rgb(132,76,52) 100%);
+background: linear-gradient(to bottom, rgb(170,152,119) 0%, rgb(132,76,52) 100%);
+font-family: 'Lato', sans-serif;
+
+}
+
+.grid {
+
+  display:grid;
+
+  grid-template-columns: 1fr 1fr  1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr  1fr 1fr 1fr;
+
+
+}
+
+#p1-redblock{
+  background-color: #f04c4c;
+  height: 100px;
+  width: 150px;
+  grid-column-start: 2;
+  grid-row-start: 4;
+  place-self: center; /* = justify + align center*/
+
+}
+
+.current-p1{
+  grid-column-start: 4;
+  grid-row-start: 4;
+  justify-self: center;
+  align-self: start;
+}
+
+.current-p2{
+  grid-column-start: 2;
+  grid-row-start: 4;
+  justify-self: center;
+  align-self: start;
+}
+
+#p2-redblock{
+  background-color: #f04c4c;
+  height: 100px;
+  width: 150px;
+  grid-column-start: 4;
+  grid-row-start: 4;
+  place-self: center; /* = justify + align center*/
+
+}
+
+.txtPlayer1 {
+
+  font-size: 48px;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  place-self: center; /* = justify + align center*/
+
+}
+
+.txtPlayer2 {
+
+font-size: 48px;
+grid-column-start: 4;
+grid-row-start: 1;
+place-self: center; /* = justify + align center*/
+
+}
+
+.dice-pic {
+
+  grid-column-start: 3;
+  grid-row-start: 3;
+  background-repeat: no-repeat;
+  padding-left: 2%;
+  place-self: center;
+
+
+}
+
+.new-game {  
+
+  grid-column-start: 3;
+  grid-row-start: 1;
+  place-self: center; /* = justify + align center*/
+
+}
+
+.roll-dice {
+
+  grid-column-start: 3;
+  grid-row-start: 4;
+  justify-self: center;
+align-self: end;
+font-size: 18px;
+}
+
+.hold {
+
+grid-column-start: 3;
+grid-row-start: 4;
+place-self: center; /* = justify + align center*/
+font-size: 18px;
+
+}
+
+.number-p1{
+
+  grid-column-start: 2;
+grid-row-start: 4;
+place-self: center;
+font-size: 48px;
+
+}
+
+.number-p2{
+
+  grid-column-start: 4;
+grid-row-start: 4;
+place-self: center;
+font-size: 48px;
+  
+}
+.score-p1{
+
+grid-column-start: 2;
+grid-row-start: 2;
+place-self: center;
+font-size: 100px;
+
+}
+.score-p2{
+
+grid-column-start: 4;
+grid-row-start: 2;
+place-self: center;
+font-size: 100px;
+
+}
