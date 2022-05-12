@@ -45,11 +45,11 @@ function RollDice(){
     if(player=="p1"){
       scorep1.textContent="0";
       player="p2";
-      alert('Au tour du joueur 2 !');
+      alert('Vous avez tiré le chiffre 1 ! Au tour du joueur 2 !');
     }else{
       scorep2.textContent="0";
       player="p1";
-      alert('Au tout du Joueur 1 !')
+      alert('Vous avez tiré le chiffre 1 ! Au tout du Joueur 1 !')
     }
 
     }
